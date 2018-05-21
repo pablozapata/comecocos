@@ -7,7 +7,7 @@ package guicomecocos;
 
 import data.Comecocos;
 import static data.Comecocos.PARADO;
-import data.Rejilla;
+import data.Laberinto;
 
 /**
  *
@@ -16,7 +16,7 @@ import data.Rejilla;
 public class ComecocosFrame extends javax.swing.JFrame {
 
 
-    private final Rejilla laberinto;
+    private final Laberinto laberinto;
     private Comecocos comecocos;
     
     /**Constructor de la clase que inicializa las variables.
@@ -24,7 +24,7 @@ public class ComecocosFrame extends javax.swing.JFrame {
     public ComecocosFrame() {
         
         initComponents();
-        laberinto = new Rejilla();
+        laberinto = new Laberinto();
         comecocos = new Comecocos(23,13); // Posición del comecocos
 
     }
@@ -33,7 +33,7 @@ public class ComecocosFrame extends javax.swing.JFrame {
      * 
      * @return mapa del laberinto.
      */
-    public Rejilla getLaberinto(){
+    public Laberinto getLaberinto(){
         return laberinto;
     }
     

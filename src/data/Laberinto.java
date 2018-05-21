@@ -12,7 +12,7 @@ package data;
 
 /*Clase que contiene el mapa del laberinto del comecocos.
 */
-public class Rejilla {
+public class Laberinto {
     
     private final int altura;
     private final int anchura;
@@ -22,7 +22,7 @@ public class Rejilla {
      * del mapa del laberinto.
      * 
      */
-    public Rejilla(){
+    public Laberinto(){
         altura = 31;
         anchura = 28;
         

@@ -6,7 +6,7 @@
 package guicomecocos;
 
 import data.Comecocos;
-import data.Rejilla;
+import data.Laberinto;
 import java.awt.Color;
 import java.awt.Graphics;
 
@@ -38,7 +38,7 @@ public class RejillaPanel extends javax.swing.JPanel {
      * @param g - elemento gráfico
      */
     public void dibujaLaberinto(Graphics g){
-        Rejilla rejilla = frame.getLaberinto();
+        Laberinto rejilla = frame.getLaberinto();
          g.setColor(Color.WHITE);
          g.fillRect(0, 0, getWidth(), getHeight());
         
@@ -86,7 +86,7 @@ public class RejillaPanel extends javax.swing.JPanel {
         int posicionY;
 
         int[] angulo={125,45,310,210};
-            Rejilla rejilla = frame.getLaberinto();
+            Laberinto rejilla = frame.getLaberinto();
             g.setColor(Color.YELLOW);
      }
     
